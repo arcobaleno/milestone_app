@@ -1,0 +1,48 @@
+.page_container_process {
+	position:relative;
+	height:164px;
+	width:980px;
+	background-color:white;
+	margin:auto;
+	margin-top:30px;
+}
+
+.left_container_process {
+	position:relative;
+	height:164px;
+	width:370px;
+	background-color:black;
+	border-right:solid white;
+	float:left;
+}
+
+.right_container_process {
+	position:relative;
+	height:164px;
+	width:607px;
+	background-color:#9b9b9b;
+	float:right;
+}
+
+p.right_container_text_process {
+	color:#050a29;
+	font-family:LTCPabstOldstyle;
+	text-align:left;
+	font-size:18px;
+	padding-top:30px;
+	padding-right:30px;
+	padding-left:30px;
+	letter-spacing:1px;
+	line-height:30px;
+}
+
+h1.left_container_text_process {
+	color:white;
+	font-family:LTCPabstOldstyle;
+	font-variant:small-caps;
+	text-align:center;
+	padding-top:35px;
+	padding-right:30px;
+	padding-left:30px;
+	letter-spacing:2.0px;
+}

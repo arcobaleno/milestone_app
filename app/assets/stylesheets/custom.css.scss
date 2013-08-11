@@ -1,0 +1,100 @@
+/* page */
+
+div.container {
+	height:660px;
+}
+
+/* header */
+
+div.header_div {
+	border-bottom:2px solid;
+	height:70px;
+}
+
+.header {
+	width:1100px;
+	margin-left:100px;
+	font-family:Copperplate;
+}
+
+.left_header {
+	position:relative;
+	right:16px;
+	width:500px;
+	height:40px;
+	float:left;
+	margin-left:16px;
+	text-align:left;
+	line-height:30%;
+}
+
+.right_header {
+	display:inline;
+	width:560px;
+	height:40px;
+	float:right;
+	padding-top:25px;
+}
+
+ul.top_nav_bar {
+	list-style-type:none;
+	margin-left:80px;
+	padding:0;
+	word-spacing:30px;
+}
+
+
+li.links {
+	display:inline;
+	text-decoration:none;
+}
+
+.links a:link {
+	text-decoration:none;
+}
+
+.links a:hover {
+	text-decoration:none;
+	color:black;
+}
+
+h1#logo_top {
+	font-size:24px;
+	margin-top:18px;
+}
+
+h1#logo_bottom {
+	margin-top:15px;
+}
+/* footer */
+
+div.footer_div {
+	border-top:2px solid;
+	height:70px;
+}
+
+.footer {
+	width:1100px;
+	margin-left:100px;
+	font-family:Copperplate;
+}
+
+.left_footer {
+	margin-top:15px;
+	width:500px;
+	height:40px;
+	float:left;
+	text-align:left;
+	position:relative;
+}
+
+.right_footer {
+	width:560px;
+	height:40px;
+	float:right;
+	padding-top:25px;
+	padding-right:142px;
+	text-align:right;
+	position:relative;
+	top:-65px;
+}
