@@ -10,4 +10,7 @@ class StaticPagesController < ApplicationController
 
   def our_process
   end
+
+  def calculator
+  end
 end

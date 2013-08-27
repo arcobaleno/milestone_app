@@ -18,3 +18,9 @@
 $(window).load(function(){
 	$('#slides').cycle('fade');
 });
+
+
+
+
+// Calculator
+
