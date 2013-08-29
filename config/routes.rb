@@ -2,10 +2,11 @@ MilestoneApp::Application.routes.draw do
 
   root :to => 'static_pages#home'
 
-  match '/about',   to: 'static_pages#about'
-  match '/contact', to: 'static_pages#contact'
-  match '/process', to: 'static_pages#process'
-  match '/calculator', to: 'static_pages#calculator'
+  match '/about',   to:          'static_pages#about'
+  match '/contact', to:          'static_pages#contact'
+  match '/process', to:          'static_pages#process'
+  match '/calculator', to:       'static_pages#calculator'
+  match '/digital_services', to: 'static_pages#digital_services'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

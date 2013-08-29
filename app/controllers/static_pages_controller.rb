@@ -13,4 +13,8 @@ class StaticPagesController < ApplicationController
 
   def calculator
   end
+
+  def digital_services
+  end
+
 end
