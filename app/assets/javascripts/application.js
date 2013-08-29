@@ -15,12 +15,3 @@
 //= require jquery.cycle.all.js
 //= require_tree .
 
-$(window).load(function(){
-	$('#slides').cycle('fade');
-});
-
-
-
-
-// Calculator
-

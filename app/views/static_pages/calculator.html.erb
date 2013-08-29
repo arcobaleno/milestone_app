@@ -2,37 +2,53 @@
 
 <div class="calculator">
 	<div class="cost">
-		<input id="tons_of_tires" type="text"/>
-		<input type="button" onClick="calculate();" value="Tire Recovery Output">
+		<select id="tons">
+   		<option value="None">-- Select --</option>
+   		<option value="15">15 tons/day</option>
+   		<option value="30">30 tons/day</option>
+   		<option value="45">45 tons/day</option>
+   		<option value="60">60 tons/day</option>
+   		<option value="75">75 tons/day</option>
+   		<option value="90">90 tons/day</option>
+   		<option value="105">105 tons/day</option>
+   		<option value="120">120 tons/day</option>
+   		<option value="135">135 tons/day</option>
+   		<option value="150">150 tons/day</option>
+   		<option value="165">165 tons/day</option>
+   		<option value="180">180 tons/day</option>
+   		<option value="195">195 tons/day</option>
+   		<option value="210">210 tons/day</option>
+		</select>
+		<input type="button" class="button" value="Calculate">
 		<span>=</span>
-		<span class="equiptment_cost">$1,000,000</span>
+		<span class="equiptment_cost_box">$<p id="equipment_cost">1,000,000</p>Equipment Cost</span>
 		<span>+</span>
-		<span class="Installation Kit">$1,000,000</span>
+		<span class="Installation Kit">$<p id="equipment_install">1,000,000</p>Installation Cost</span>
 		<span>=</span>
-		<span class="total_cost">Total Cost</span>
+		<span>Total Cost: $<p id="total_cost"></p></span>
 	</div>
 </br>
 	<div class="output">
-		<span class="box">Output Liters of Petroleum</span>
+		<span class="box"><p id="liters_petro"></p>Output Liters of Petroleum</span>
 	</div>
 </br>
 	<div class="output">
-		<span>Output Gallons of Petroleum</span>
+		<span><p id="gallons_petro"></p>Output Gallons of Petroleum</span>
 	</div>
 </br>
 	<div class="output">
-		<span class="box">Output Kg of Carbon Char</span>
+		<span class="box"><p id="kg_carbon"></p>Output Kg of Carbon Char</span>
 	</div>
 </br>
 	<div class="output">
-		<span class="box">Output Kg of Steel Wire</span>
+		<span class="box"><p id="kg_steel"></p>Output Kg of Steel Wire</span>
 	</div>
 </br>
 	<div class="output">
-		<span class="box">Output Kg of Methane Gas</span>
+		<span class="box"><p id="kg_methane"></p>Output Kg of Methane Gas</span>
 	</div>
 </br>
 	<div class="output">
-		<span class="box">Output Kg of Carbon Fiber</span>
+		<span class="box"><p id="kg_carbon_fiber"></p>Output Kg of Carbon Fiber</span>
 	</div>
 </div>
