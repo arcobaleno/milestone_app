@@ -26,6 +26,43 @@
 	left:153px;
 }
 
+.photo_1 {
+	margin-top:3px;
+	margin-right:3px;
+	margin-bottom:3px;
+	float:left;
+}
+
+.photo_2 {
+	margin-top:3px;
+	margin-right:3px;
+	margin-bottom:3px;
+	float:left;
+}
+
+.photo_3 {
+	margin-top:3px;
+	margin-bottom:3px;
+	float:left;
+}
+
+.photo_4 {
+	margin-right:3px;
+	float:left;
+	margin-bottom:30px;
+}
+
+.photo_5 {
+	margin-right:3px;
+	float:left;
+	margin-bottom:30px;
+}
+
+.photo_6 {
+	float:left;
+	margin-bottom:30px;
+}
+
 .page_container_process {
 	height:968px;
 	width:981px;
@@ -126,6 +163,26 @@ p.second_section_process {
 
 span.bold {
 	font-weight:bold;
+}
+
+.feedstock_banner {
+	position:relative;
+	height:164px;
+	width:100%;
+	margin-top:3px;
+	background-color:black;
+	float:left;
+}
+
+.feedstock_label {
+	color:white;
+	font-family:LTCPabstOldstyle;
+	font-variant:small-caps;
+	text-align:center;
+	padding-top:35px;
+	padding-right:30px;
+	padding-left:30px;
+	letter-spacing:2.0px;
 }
 
 .footer_margin1{
