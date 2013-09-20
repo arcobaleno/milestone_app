@@ -1,23 +1,39 @@
-<h1>Listing users</h1>
-  
+<% provide(:title, 'Sign up') %>
+
+<div class="form">
+  <h1>Sign up</h1>
+
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', object: @user %>
+
 <table>
   <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th><%= f.label :first_name %></th>
+    <th><%= f.text_field :first_name %></th>
   </tr>
-<% @users.each do |user| %>
   <tr>
-    <td><%= user.name %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, method: :delete,
-       data: { confirm: 'Are you sure?' } %></td>
+    <th><%= f.label :last_name %></th>
+    <th><%= f.text_field :last_name %></th>
   </tr>
-<% end %>
+  <tr>
+    <th><%= f.label :email %></th>
+    <th><%= f.text_field :email %></th>
+  </tr>
+  <tr>
+    <th><%= f.label :phone_number %></th>
+    <th><%= f.text_field :phone_number %></th>
+  </tr>
+  <tr>
+    <th><%= f.label :password %></th>
+    <th><%= f.password_field :password %></th>
+  </tr>
+  <tr>
+    <th><%= f.label :password_confirmation, "Confirmation" %></th>
+    <th><%= f.password_field :password_confirmation %></th>
+  </tr>
 </table>
 
-<br />
-
-<%= link_to 'New User', new_user_path %>
+    <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
+<% end %>
+<%= link_to 'Back', users_path %>
+</div>
