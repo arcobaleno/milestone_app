@@ -9,4 +9,9 @@ module ApplicationHelper
 			"#{base_title} | #{page_title}"
 		end
 	end
+
+	#Returns the full name of a user when a user object is passed through.
+	def full_name(user)
+		user.first_name + " " + user.last_name
+	end
 end

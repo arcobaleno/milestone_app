@@ -16,11 +16,11 @@ $(".button").click(function () {
 	//total cost output
 	x= $('#tons').val()/15*2000000;
 	document.getElementById("total_cost").innerHTML=x;
-	//litres Petro Output
-	l= $('#tons').val()*4
+	//litres Diesel Output
+	l= $('#tons').val()*400
 	document.getElementById("liters_petro").innerHTML=l;
-	//Gallons of Petro Output
-	g= $('#tons').val()*1.05
+	//Gallons of Diesel Output
+	g= $('#tons').val()*105
 	document.getElementById("gallons_petro").innerHTML=g;
 	//Kg Carbon Char Output
 	c= $('#tons').val()*330
@@ -29,7 +29,7 @@ $(".button").click(function () {
 	s= $('#tons').val()*110
 	document.getElementById("kg_steel").innerHTML=s;
 	//Kg Methane Gas Output
-	m= $('#tons').val()*330
+	m= $('#tons').val()*110
 	document.getElementById("kg_methane").innerHTML=m;
 	//Kg Fiber Output
 	f= $('#tons').val()*23
