@@ -1,26 +1,33 @@
 <div class="form">
-  <h1>Listing users</h1>
-  <% if @users.any? %>
-    <table>
-      <tr>
-        <th>Name</th>
-        <th></th>
-        <th></th>
-        <th></th>
-      </tr>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= full_name(user) %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete,
-           data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-    </table>
-
-    <br />
-
-    <%= link_to 'New User', new_user_path %>
-<% end %>
+  <h1>Welcome</h1>
+  <p>Please Proceed to the links bellow for further informtion.</p>
 </div>
+
+<% if current_user.admin? %>
+  <div class="form">
+    <h1>Listing users</h1>
+    <% if @users.any? %>
+      <table>
+        <tr>
+          <th>Name:</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= full_name(user) %></td>
+          <td><%= link_to 'Show', user %></td>
+          <td><%= link_to 'Edit', edit_user_path(user) %></td>
+          <td><%= link_to 'Destroy', user, method: :delete,
+             data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+      </table>
+
+      <br />
+
+      <%= link_to 'New User', new_user_path %>
+  <% end %>
+  </div>
+<% end %>
