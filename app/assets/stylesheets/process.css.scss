@@ -28,7 +28,7 @@
 
 .page_container_process {
 	height:968px;
-	width:980px;
+	width:981px;
 	background-color:white;
 	margin:auto;
 	margin-top:30px;
@@ -86,10 +86,16 @@ h1.left_container_text_process {
 
 .right_content_process {
 	position:relative;
+
 	width:607px;
 	height:800px;
 	margin-top:3px;
 	float:right;
+}
+
+.four_images {
+	position:relative;
+	left:152px;
 }
 
 p.first_section_process {
