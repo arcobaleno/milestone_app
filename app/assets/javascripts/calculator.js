@@ -12,7 +12,7 @@ $(".button").click(function () {
 	document.getElementById("equipment_cost").innerHTML=z;
 	//Equipment Installation
 	y= $('#tons').val()/15*1000000;
-	document.getElementById("equipment_install").innerHTML=y;
+	document.getElementById("equipment_install").innerHTML=y.formatCurrency();
 	//total cost output
 	x= $('#tons').val()/15*2000000;
 	document.getElementById("total_cost").innerHTML=x;
@@ -37,6 +37,45 @@ $(".button").click(function () {
 	//console.log($('#tons').val());
 });
 
+// Feed Stock Photos -> On Mouse Over change the Opacity of the image
+
+$(function() {
+            $('.bottom_photos_top_row img').animate({"opacity": .4 });
+
+            $('.bottom_photos_top_row img').hover(function() {
+                $(this).stop().animate({ "opacity": 1 });
+            }, function() {
+                $(this).stop().animate({ "opacity": .5 });
+            });
+        });
+
+$(function() {
+            $('.bottom_photos_bottom_row img').animate({"opacity": .4 });
+
+            $('.bottom_photos_bottom_row img').hover(function() {
+                $(this).stop().animate({ "opacity": 1 });
+            }, function() {
+                $(this).stop().animate({ "opacity": .5 });
+            });
+        });
+
+// Calculator
+
+$(function() {
+            $('.bottom_container div').animate({"opacity": .5 });
+
+            $('.bottom_container div').hover(function() {
+                $(this).stop().animate({ "opacity": 1 });
+            }, function() {
+                $(this).stop().animate({ "opacity": .5 });
+            });
+        });
+
+// Map -> Fade in on Load
+
+$(document).ready(function() {
+	$('.right_container_bottom_map_contact').hide(0).delay(500).fadeIn(2000)
+});
 
 
 

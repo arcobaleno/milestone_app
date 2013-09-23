@@ -1,6 +1,8 @@
 <div class="form">
   <h1>Welcome</h1>
-  <p>Please Proceed to the links bellow for further informtion.</p>
+  <p>Please Proceed to the links below for further informtion.</p>
+  <p></p>
+  <p></p>
 </div>
 
 <% if current_user.admin? %>
@@ -16,8 +18,8 @@
         </tr>
       <% @users.each do |user| %>
         <tr>
-          <td><%= full_name(user) %></td>
-          <td><%= link_to 'Show', user %></td>
+          <td><%= link_to full_name(user), user %></td>
+          <td></td>
           <td><%= link_to 'Edit', edit_user_path(user) %></td>
           <td><%= link_to 'Destroy', user, method: :delete,
              data: { confirm: 'Are you sure?' } %></td>
