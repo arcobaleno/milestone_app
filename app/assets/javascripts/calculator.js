@@ -12,7 +12,7 @@ $(".button").click(function () {
 	document.getElementById("equipment_cost").innerHTML=z;
 	//Equipment Installation
 	y= $('#tons').val()/15*1000000;
-	document.getElementById("equipment_install").innerHTML=y.formatCurrency();
+	document.getElementById("equipment_install").innerHTML=y;
 	//total cost output
 	x= $('#tons').val()/15*2000000;
 	document.getElementById("total_cost").innerHTML=x;
